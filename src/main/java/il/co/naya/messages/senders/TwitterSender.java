@@ -15,8 +15,4 @@ public class TwitterSender implements MailSender {
         return Receiver.TWITTER.name();
     }
 
-   /* @Override
-    public String getName() {
-        return "Twitter";
-    }*/
 }
