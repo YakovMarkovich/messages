@@ -1,6 +1,5 @@
 package il.co.naya.messages.senders;
 
-import il.co.naya.messages.dto.MessageSendedDto;
 import il.co.naya.messages.dto.Receiver;
 
 public class TwitterSender implements MailSender {
