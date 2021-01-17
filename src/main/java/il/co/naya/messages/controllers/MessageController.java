@@ -1,6 +1,5 @@
 package il.co.naya.messages.controllers;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import il.co.naya.messages.dto.MessageDto;
 import il.co.naya.messages.dto.MessageSendedDto;
 import il.co.naya.messages.services.MessagesHandler;
