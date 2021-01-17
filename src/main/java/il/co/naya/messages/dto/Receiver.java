@@ -5,18 +5,14 @@ import il.co.naya.messages.senders.MailSender;
 import il.co.naya.messages.senders.TwitterSender;
 import il.co.naya.messages.senders.WhatsAppSender;
 import lombok.RequiredArgsConstructor;
-import lombok.ToString;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 @RequiredArgsConstructor
 public enum Receiver {
-    FACEBOOK(new FacebookSender()), TWITTER(new TwitterSender()), WHATSAPP(new WhatsAppSender());
 
-    private final MailSender mailSender;
+    FACEBOOK(), TWITTER(), WHATSAPP();
 
-    public String generateMail(String message) {
-        return mailSender.generateMail(message);
-    }
 
     @Override
     public String toString() {
